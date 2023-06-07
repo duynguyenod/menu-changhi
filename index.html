@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu chè Changhi</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        #imgContainer {
+            display: flex; justify-content: center;align-items: center; height: 100%; width: 100%
+        }
+
+        @media screen and (max-width: 768px) {
+            #imgContainer {
+                flex-direction: column;
+            }
+            #imgContainer > div {
+                width: 100% !important;
+                margin: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div id="imgContainer">
+    <div style="background-image: url('./assets/Menu1.png'); background-size: contain; background-repeat: no-repeat; width: 45%; height: 90%">
+
+    </div>
+    <div style="background-image: url('./assets/Menu2.png'); background-size: contain; background-repeat: no-repeat; width: 45%; height: 90%">
+
+    </div>
+   </div>
+</body>
+</html>
