@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,29 +11,48 @@
             width: 100vw;
             height: 100vh;
         }
+
         #imgContainer {
-            display: flex; justify-content: center;align-items: center; height: 100%; width: 100%
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100% - 55px);
+            width: 100%
         }
 
         @media screen and (max-width: 768px) {
             #imgContainer {
                 flex-direction: column;
             }
-            #imgContainer > div {
+
+            #imgContainer>div {
                 width: 100% !important;
-                margin: auto !important;
+            }
+
+            #imgContainer > :first-child {
+                margin-bottom: 10px;
             }
         }
     </style>
 </head>
+
 <body>
-   <div id="imgContainer">
-    <div style="background-image: url('./assets/Menu1.png'); background-size: contain; background-repeat: no-repeat; width: 45%; height: 90%">
+    <p style="margin: 0; text-align: center;">
+        Gọi ngay để đặt hàng<br/>
+        <b>0935 268 757</b><br/>
+        <b>0905 931 122</b>
+    </p>
+    <div id="imgContainer">
+        
+        <div
+            style="background-image: url('./assets/Menu1.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 45%; height: 90%">
 
-    </div>
-    <div style="background-image: url('./assets/Menu2.png'); background-size: contain; background-repeat: no-repeat; width: 45%; height: 90%">
+        </div>
+        <div
+            style="background-image: url('./assets/Menu2.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 45%; height: 90%">
 
+        </div>
     </div>
-   </div>
 </body>
+
 </html>
