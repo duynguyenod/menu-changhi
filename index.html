@@ -10,26 +10,28 @@
         body {
             width: 100vw;
             height: 100vh;
+            background-color: #2c2c2c;
         }
 
-        #imgContainer {
+        .imgContainer {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: calc(100% - 55px);
-            width: 100%
+            width: 100%;
+            height: auto;
+            height: fit-content;
         }
 
         @media screen and (max-width: 768px) {
-            #imgContainer {
+            .imgContainer {
                 flex-direction: column;
             }
 
-            #imgContainer>div {
+            .imgContainer>div {
                 width: 100% !important;
             }
 
-            #imgContainer > :first-child {
+            .imgContainer > :first-child {
                 margin-bottom: 10px;
             }
         }
@@ -37,21 +39,18 @@
 </head>
 
 <body>
-    <p style="margin: 0; text-align: center;">
-        Gọi ngay để đặt hàng<br/>
+    <h2 style="margin: 0; text-align: center; color: #f2f2f2">
+        Hotline đặt hàng - ship tận nơi<br/>
         <b>0935 268 757</b><br/>
         <b>0905 931 122</b>
-    </p>
-    <div id="imgContainer">
-        
-        <div
-            style="background-image: url('./assets/Menu1.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 45%; height: 90%">
-
-        </div>
-        <div
-            style="background-image: url('./assets/Menu2.png'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 45%; height: 90%">
-
-        </div>
+    </h2>
+    <div class="imgContainer">
+        <img src="./assets/new.jpg" width="50%"/>
+        <img src="./assets/tea.jpg" width="50%"/>
+    </div>
+    <div class="imgContainer">
+        <img src="./assets/old1.jpg" width="50%"/>
+        <img src="./assets/old2.jpg" width="50%"/>
     </div>
 </body>
 
